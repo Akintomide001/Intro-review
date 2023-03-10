@@ -1,0 +1,68 @@
+*{
+    margin-top: 12px;
+    margin-left: 4px;
+    color: white;
+    box-sizing: border-box;
+}
+input{
+    height: 20px;
+    outline: none;
+    background-color: #eee;
+    border: none;
+    border-radius: 9px;
+    color: black;
+}
+#submit{
+    width: 120px;
+    height: 50px;
+    background-color: #1b6eba;
+    color: black;
+    border-radius: 25px;
+    border: none;
+    margin-left: 100px;
+}
+.form{
+    width: 600px;
+    height: 300px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #000;
+}
+form{
+    margin: 50px;
+
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+body{
+    background-image:linear-gradient(rgb(12, 130, 240),rgb(63, 63, 60));
+}
+#email{
+    margin-left: 33px;
+}
+#gender{
+    margin-left: 25px;
+}
+#address{
+    margin-left: 20px;
+}
+#email-error{
+    margin-left: 90px;
+}
+.success{
+     text-align: center;
+    color: rgb(21, 240, 21);
+    animation: buttons .3s linear;
+    display: none;
+}
+#danger{
+    text-align: center;
+    color: #ef0e0e;
+    animation: buttons .3s linear;
+    display: none;
+}
+

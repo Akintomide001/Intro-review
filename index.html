@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <form>
+                <label>First name :</label>
+                <input type="text" placehaolder="First name" id="first-name" required/>
+                <label>Last name :</label>
+                <input type="text" placehaolder="Last name" id="last-name" required/>
+                </br>
+                <label>Email :</label>
+                <input type="email" placehaolder="Email" id="email" required/>
+                </br>
+                <label>Gender :</label>
+                <input type="text" placehaolder="Gender" id="gender"  required/>
+                </br>
+                <label>Address :</label>
+                <input type="text" placehaolder="Address" id="address"  required/>
+                <button type="submit" id="submit" onclick="message()">submit</button>
+            </form>
+            <div class="success" id="success">You have successfully filled this form</div>
+            <div id="danger">Please complete this form</div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
