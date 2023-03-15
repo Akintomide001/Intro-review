@@ -21,6 +21,13 @@ input{
     border: none;
     margin-left: 100px;
 }
+select{
+    background-color: #1b6eba;
+    width: 145px;
+    border: none;
+    border-radius: 9px;
+    margin-left: 25px;
+}
 .form{
     width: 600px;
     height: 300px;
@@ -62,7 +69,7 @@ body{
 #danger{
     text-align: center;
     color: #ef0e0e;
-    animation: buttons .3s linear;
+    animation: buttons .5s linear;
     display: none;
 }
 

@@ -14,18 +14,23 @@
         <div class="form">
             <form>
                 <label>First name :</label>
-                <input type="text" placehaolder="First name" id="first-name" required/>
+                <input type="text" placehaolder="First name" id="first-name" required />
                 <label>Last name :</label>
-                <input type="text" placehaolder="Last name" id="last-name" required/>
+                <input type="text" placehaolder="Last name" id="last-name" required />
                 </br>
                 <label>Email :</label>
-                <input type="email" placehaolder="Email" id="email" required/>
+                <input type="email" placehaolder="Email" id="email" required />
                 </br>
                 <label>Gender :</label>
-                <input type="text" placehaolder="Gender" id="gender"  required/>
+                <!--<input type="text" placehaolder="Gender" id="gender" required />-->
+                <select id="gender">
+                    <option value="0"></option>
+                    <option value="1">Female</option>
+                    <option value="2">Male</option>
+                </select>
                 </br>
                 <label>Address :</label>
-                <input type="text" placehaolder="Address" id="address"  required/>
+                <input type="text" placehaolder="Address" id="address" required />
                 <button type="submit" id="submit" onclick="message()">submit</button>
             </form>
             <div class="success" id="success">You have successfully filled this form</div>
@@ -33,7 +38,38 @@
         </div>
     </div>
 
-    <script src="index.js"></script>
+    <script>
+        function message() {
+            var FirstName = document.getElementById('first-name');
+            var LastName = document.getElementById('last-name');
+            var Gender = document.getElementById('gender');
+            var Email = document.getElementById('email');
+            var Address = document.getElementById('address');
+            const success = document.getElementById('success');
+            const danger = document.getElementById('danger');
+
+            if (FirstName.value === '' || LastName.value === '' || Gender.value === '' || Email.value === '' || Address.value === '') {
+                danger.style.display = 'block';
+            }
+            else {
+                setTimeout(() => {
+                    FirstName.value = '';
+                    LastName.value = '';
+                    Gender.value = '';
+                    Email.value = '';
+                    Address.value = '';
+                }, 4000);
+
+                success.style.display = 'block';
+            }
+            setTimeout(() => {
+                danger.style.display = 'none';
+                success.style.display = 'none';
+            }, 4000);
+
+        }
+
+    </script>
 </body>
 
 </html>
